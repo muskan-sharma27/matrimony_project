@@ -5,6 +5,7 @@ import { Routes, RouterModule } from "@angular/router";
 
 import { AdminLayoutComponent } from "./layouts/admin-layout/admin-layout.component";
 import {StartpageComponent} from "./layouts/login_signup_module/startpage.component";
+import {ProfileSettingsComponent} from "./layouts/profile-settings/profile-settings.component";
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
           "./layouts/admin-layout/admin-layout.module#AdminLayoutModule"
       }
     ]
+  },
+  {
+    path: "settings",
+    component: ProfileSettingsComponent
   }
   
 ];

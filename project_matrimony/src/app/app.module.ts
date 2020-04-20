@@ -13,6 +13,7 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { AppRoutingModule } from "./app-routing.module";
 import { ComponentsModule } from "./components/components.module";
 import {StartpageComponent} from "./layouts/login_signup_module/startpage.component";
+import { ProfileSettingsComponent } from './layouts/profile-settings/profile-settings.component';
 
 @NgModule({
   imports: [
@@ -25,7 +26,7 @@ import {StartpageComponent} from "./layouts/login_signup_module/startpage.compon
     AppRoutingModule,
     ToastrModule.forRoot()
   ],
-  declarations: [AppComponent, AdminLayoutComponent,StartpageComponent],
+  declarations: [AppComponent, AdminLayoutComponent,StartpageComponent,  ProfileSettingsComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
